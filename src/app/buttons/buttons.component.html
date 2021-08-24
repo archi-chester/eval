@@ -1,0 +1,10 @@
+
+<!--<ng-template *ngFor="let button of (buttons|async); let i = index">-->
+<!--  {{i}}-->
+<!--  {{button.name}}-->
+<!--  <button>{{button.name}}</button>-->
+<!--</ng-template>-->
+<div *ngFor="let button of (buttons|async); let i = index">
+  <button (click)="eventText(button)">{{button.name}}</button>
+</div>
+
